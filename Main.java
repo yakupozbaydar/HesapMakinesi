@@ -23,11 +23,15 @@ class Main{
                 System.out.println("sonuç:"+ sonuc);
                 break;
             case '/':
+                if(ikinci == 0){
+                    System.out.println("bir sayıyı 0'a bölemezsin");
+                    break;
+                }
                 sonuc=birinci/ikinci;
                 System.out.println("sonuç:"+ sonuc);
                 break;
             default:
-                System.out.println("Invalid /!");
+                System.out.println("geçersiz islem");
                 break;
         }
     giris.close();
