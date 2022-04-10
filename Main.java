@@ -7,7 +7,7 @@ class Main{
 
         Scanner giris = new Scanner (System.in);
 
-        System.out.println("işlem seçini: + ");
+        System.out.println("işlem seçini: + , / ");
         islem = giris.next().charAt(0);
         System.out.println("ilk sayıyı girin:");
 
@@ -22,8 +22,12 @@ class Main{
                 sonuc=birinci+ikinci;
                 System.out.println("sonuç:"+ sonuc);
                 break;
+            case '/':
+                sonuc=birinci/ikinci;
+                System.out.println("sonuç:"+ sonuc);
+                break;
             default:
-                System.out.println("Invalid operator!");
+                System.out.println("Invalid /!");
                 break;
         }
     giris.close();
